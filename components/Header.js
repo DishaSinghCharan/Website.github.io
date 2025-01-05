@@ -23,7 +23,7 @@ export default function Header() {
         <div className="text-center">
           {/* Logo */}
           <img
-            src="/logo.jpeg" // Ensure logo.jpeg is placed in the public folder
+            src="/Website.github.io/logo.jpeg" // Ensure logo.jpeg is placed in the public folder
             alt="FAM4U Logo"
             className="w-auto h-20 mx-auto mb-2" // Adjust width and height as needed
           />
@@ -33,7 +33,7 @@ export default function Header() {
         <div className="absolute top-20 right-4 bg-blue-600 p-2 rounded-full shadow-lg hover:bg-blue-700">
           <Link href="/donation" passHref>
             <img
-              src="/LOVE.png" // Ensure this image is placed in the public folder
+              src="/Website.github.io/LOVE.png" // Ensure this image is placed in the public folder
               alt="Give Love Icon"
               className="w-6 h-6 object-contain" // Adjust size of the image
             />
