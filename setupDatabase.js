@@ -48,16 +48,16 @@ db.serialize(() => {
 
     if (row.count === 0) {
       db.run(
-        "INSERT INTO users (name, image, description, age, location, bio) VALUES ('Grandfather Henry', '/animepfp.jpg', 'Loves spending time with family and sharing stories.', 68, 'Texas', 'A warm-hearted grandfather looking to connect with others for meaningful conversations and family bonding.')"
+        "INSERT INTO users (name, image, description, age, location, bio) VALUES ('Grandfather Henry', '/Website.github.io/animepfp.jpg', 'Loves spending time with family and sharing stories.', 68, 'Texas', 'A warm-hearted grandfather looking to connect with others for meaningful conversations and family bonding.')"
       );
       db.run(
-        "INSERT INTO users (name, image, description, age, location, bio) VALUES ('Grandmother Alice', '/person2.jpg', 'Enjoys reading, gardening, and knitting.', 72, 'California', 'A sweet grandmother looking for a companion to share experiences and stories.')"
+        "INSERT INTO users (name, image, description, age, location, bio) VALUES ('Grandmother Alice', '/Website.github.io/person2.jpg', 'Enjoys reading, gardening, and knitting.', 72, 'California', 'A sweet grandmother looking for a companion to share experiences and stories.')"
       );
       db.run(
-        "INSERT INTO users (name, image, description, age, location, bio) VALUES ('Tommy', '/person3.jpg', 'An energetic boy who loves to play and make new friends.', 10, 'Florida', 'A young boy who enjoys playing sports and meeting people who can share his playful spirit.')"
+        "INSERT INTO users (name, image, description, age, location, bio) VALUES ('Tommy', '/Website.github.io/person3.jpg', 'An energetic boy who loves to play and make new friends.', 10, 'Florida', 'A young boy who enjoys playing sports and meeting people who can share his playful spirit.')"
       );
       db.run(
-        "INSERT INTO users (name, image, description, age, location, bio) VALUES ('Lucy', '/person4.jpg', 'Curious and creative girl who loves arts and crafts.', 8, 'Ohio', 'A bright young girl looking for a friend who loves to create and explore new ideas together.')"
+        "INSERT INTO users (name, image, description, age, location, bio) VALUES ('Lucy', '/Website.github.io/person4.jpg', 'Curious and creative girl who loves arts and crafts.', 8, 'Ohio', 'A bright young girl looking for a friend who loves to create and explore new ideas together.')"
       );
     }
 
