@@ -23,7 +23,7 @@ export default function Header() {
         <div className="text-center">
           {/* Logo */}
           <img
-            src="/public/logo.jpeg" // Ensure logo.jpeg is placed in the public folder
+            src="../logo.jpeg" // Ensure logo.jpeg is placed in the public folder
             alt="FAM4U Logo"
             className="w-auto h-20 mx-auto mb-2" // Adjust width and height as needed
           />
