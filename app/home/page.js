@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Link from "next/link";
 
 export default function HomePage() {
   const [users, setUsers] = useState([]);
@@ -19,20 +18,24 @@ export default function HomePage() {
     const fetchUsers = async () => {
       try {
         const res = await fetch("/users");
+        if (!res.ok) throw new Error("Failed to fetch users");
         const data = await res.json();
         setUsers(data);
       } catch (error) {
         console.error("Failed to fetch users:", error);
+        setError("Could not load users. Please try again later.");
       }
     };
 
     const fetchMatchedUsers = async () => {
       try {
-        const res = await fetch("/macthes");
+        const res = await fetch("/matches"); // Updated to match `page.js` route
+        if (!res.ok) throw new Error("Failed to fetch matched users");
         const data = await res.json();
         setMatchedUsers(data);
       } catch (error) {
         console.error("Failed to fetch matched users:", error);
+        setError("Could not load matched users. Please try again later.");
       }
     };
 
@@ -43,7 +46,9 @@ export default function HomePage() {
   const handleSwipe = async (direction) => {
     if (direction === "right") {
       const currentUserId = 1; // Replace with the logged-in user's ID
-      const swipedUserId = users[currentIndex].id;
+      const swipedUserId = users[currentIndex]?.id;
+
+      if (!swipedUserId) return;
 
       // Check if the user is already matched
       if (isMatched(swipedUserId)) {

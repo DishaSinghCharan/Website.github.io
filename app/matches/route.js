@@ -1,4 +1,8 @@
+// app/matches/route.js
 import sqlite3 from "sqlite3";
+
+export const dynamic = "force-static"; // Force static generation
+export const revalidate = 10; // Revalidate every 10 seconds
 
 export async function GET(req) {
   return new Promise((resolve, reject) => {
