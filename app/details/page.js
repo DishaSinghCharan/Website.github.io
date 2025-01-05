@@ -81,7 +81,7 @@ export default function UserDetails() {
   const handleSubmitDetails = () => {
     if (!isValidStep()) return;
     console.log("User details submitted:", userDetails);
-    router.push("/home");
+    router.push("/Website.github.io/home");
   };
 
   return (

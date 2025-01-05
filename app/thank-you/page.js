@@ -16,7 +16,7 @@ export default function ThankYou() {
 
       {/* Logo at the top center */}
       <img
-        src="/logo.jpeg" // Make sure logo.jpeg is in the public folder
+        src="/Website.github.io/logo.jpeg" // Make sure logo.jpeg is in the public folder
         alt="FAM4U Logo"
         className="mb-8 w-100 h-100 object-contain mt-3"
       />

@@ -16,7 +16,7 @@ export default function Profile() {
 
   const handleLogout = () => {
     // Perform logout logic (e.g., remove token or session)
-    router.push("/login"); // Redirect to login page after logout
+    router.push("/Website.github.io/login"); // Redirect to login page after logout
   };
 
   return (

@@ -21,7 +21,7 @@ export default function ThankYou() {
       setDonated(true);
 
       setTimeout(() => {
-        router.push("/home");
+        router.push("/Website.github.io/home");
       }, 2000);
     }
   };

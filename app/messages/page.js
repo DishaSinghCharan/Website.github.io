@@ -14,7 +14,7 @@ export default function Messages() {
   useEffect(() => {
     const fetchMatches = async () => {
       try {
-        const res = await fetch("/matches");
+        const res = await fetch("/Website.github.io/matches");
         const data = await res.json();
         setMatches(data);
       } catch (error) {
